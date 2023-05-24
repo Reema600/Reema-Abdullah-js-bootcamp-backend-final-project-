@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+    <!-- <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title> -->
+    <nav>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="/">Home</a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/addCourseForm">Add Course</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/">Logout</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+            </ul>
+          </nav>
+        <h4>Learning Management System</h4>
+  
+      
+    </nav>
+      </nav>
+      <div class="container mt-4">
+        <div class="mt-4 p-5 bg-secondary text-white rounded">
+            <h1>  Learning Management System</h1>
+           
+        </div>
+    </div>
+  </head>
+  <body>
+    <div class="shadow-none p-5 mb-4 bg-light ">
+    <h1>All Courses:</h1>
+<hr>
+    <!-- <a
+      herf="/addCourseForm"
+      style="background: papayawhip; padding: 3px; color: black"
+    >
+    
+    </a> -->
+
+    <% for( let courses of allCourses ) { %>
+    <h3><%= courses.CourseName %></h3>
+
+    <a
+      href="/courseDetails/<%=courses._id%>"
+      style="
+        background: gray;
+        color: rgb(255, 255, 255);
+        padding: 7px;
+        border-radius: 10px;
+      "
+      >Details</a
+    >
+
+    <a
+      href="/removeCourse/<%=courses._id %>"
+      style="
+        background: rgb(94, 50, 50);
+        color: rgb(255, 255, 255);
+        padding: 7px;
+        border-radius: 10px;
+      "
+      >Delete</a
+    >
+
+    <a
+      href="/editCourse/<%= courses._id %>"
+      style="
+        background: rgb(197, 197, 195);
+        color: rgb(255, 255, 255);
+        padding: 7px;
+        border-radius: 10px;
+      "
+      >Update</a
+    >
+    <hr />
+    <% } %>
+</div>
+  </body>
+</html>

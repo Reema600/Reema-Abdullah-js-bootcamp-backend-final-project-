@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <nav>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="/">Home</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/allCourses">All Course</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Logout</a>
+          </li>
+         
+        </ul>
+      </nav>
+  <body>
+    <div class="container mt-4">
+        <div class="mt-4 p-5 bg-secondary text-white rounded">
+            <h1>Course Details:</h1>
+        </div>
+
+    <div class="shadow p-5 mb-4 bg-white "> 
+         
+
+        <div>
+            <hr>
+            <h4>Course Name:</h4>
+          <h5><%= courses.CourseName %></h5>
+          <hr>
+          <h4>Course Description:</h4>
+          <h5><%= courses.CourseDescription%></h5>
+          <hr>
+          <h4>Course Start Date:</h4>
+          <h5><%= courses.CourseStart_date %></h5>
+          <hr>
+          <h4>Course End Date:</h4>
+          <h5><%= courses.CourseEnd_date %></h5>
+          <hr />
+        </div></div>
+   
+  </body>
+</html>

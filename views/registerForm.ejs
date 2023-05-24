@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+    <!-- <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title> -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <a class="navbar-brand" href="/">Home</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/loginForm">Login</a>
+        </li>
+      
+      </ul>
+        </nav>
+    <!-- <nav>
+
+      <h4>Learning Management System</h4>
+
+      <ul>
+
+        <li><a href="/">Home</a></li>
+        <li><a href="/loginForm">Login</a></li>
+        <li><a href="/registerForm">Register</a></li>
+        <li><a href="/addCourseForm">Add Course</a></li>
+
+      </ul>
+
+    </nav> -->
+ 
+    <div class="container mt-4 p-5 d-flex justify-content-center">
+      <div class="card" style="width: 18rem">
+        <div class="card-header">Register Form</div>
+        <div class="card-body">
+          <form action="/register" method="POST">
+            <div class="mb-3">
+              <label for="InstructorName-reg" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="InstructorName-reg"
+                name="InstructorName"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="InstructorEmail-reg" class="form-label">Email</label>
+              <input
+                type="text"
+                class="form-control"
+                id="InstructorEmail-reg"
+                name="InstructorEmail"
+              />
+            </div>
+            <div class="mb-3">
+              <label for=" InstructorPassword-reg" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="InstructorPassword-reg"
+                name="InstructorPassword"
+              />
+            </div>
+
+            <button type="submit" class="btn bg-secondary text-white rounded">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- <h1>Register for Instructor</h1>
+    <form action="/register" method="post">
+      <label>Name:</label>
+      <input name="InstructorName" />
+      <label>Password:</label>
+      <input name="InstructorPassword" />
+      <button class="btn btn-secondary">Register</button>
+    </form> -->
+  </body>
+</html>
