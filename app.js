@@ -326,7 +326,10 @@ app.get("/api/Student/:studentId/allCourses", isLoggedIn, (req, res) => {
 });
 //cancel the registration from the course
 app.delete(
-  "/api/deleteCourse/:CourseId",isLoggedIn,checkBlogAuthor,(req, res) => {
+  "/api/deleteCourse/:CourseId",
+  isLoggedIn,
+  checkBlogAuthor,
+  (req, res) => {
     const CourseId = req.params.CourseId;
     Blog.findById(CourseId)
       .then((deleteCourse) => {
