@@ -331,7 +331,7 @@ app.delete(
   checkBlogAuthor,
   (req, res) => {
     const CourseId = req.params.CourseId;
-    Blog.findById(CourseId)
+    Course.findByIdAndDelete(CourseId)
       .then((deleteCourse) => {
         res.json({ deleteCourse });
       })
