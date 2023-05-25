@@ -21,3 +21,6 @@ login page
 register page
 
 <img width="959" alt="image" src="https://github.com/Reema600/Reema-Abdullah-js-bootcamp-backend-final-project-/assets/132255710/1d13a5db-a547-4c93-8f50-37a64ec1680d">
+
+<img width="960" alt="image" src="https://github.com/Reema600/Reema-Abdullah-js-bootcamp-backend-final-project-/assets/132255710/da0e2369-aabd-4aeb-90e0-49b9fcd97c05">
+
